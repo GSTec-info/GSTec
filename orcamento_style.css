@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 1.5em;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecalho_1 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-between;
+}
+
+.img_logo {
+    display: block;
+    height: 2.5em;
+}
+
+.menu_botao_home {
+    border: none;
+    background-color: transparent;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.menu_botao_home:hover {
+    border: none;
+    background-color: rgba(0, 0, 255, 0.404);
+}
+
+.menu_item {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.486);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.principal {
+    padding-top: 8em;
+    background: url("Fundo.jpeg");
+    background-repeat: none;
+    background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.Campos {
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 1em;
+}
+
+.CampoNome {
+    display: flex;
+    flex-direction: row;
+}
+
+.CampoNome>input_nome {
+    width: 100%;
+    background-color: violet;
+}
+
+.P_Nome {
+    color: white;
+    padding-right: 1em;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+}
+
+.rodape>img {
+    width: 80px;
+    margin: 1em;
+}
+
+.rodape>p {
+    color: white;
+    font-size: 0.8em;
+}
