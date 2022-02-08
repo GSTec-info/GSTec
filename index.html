@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">        
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>GSTec Informática</title>
-        <meta name="description" content="Minha primeira página html de estudos">
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    </head>
-    
-    <body>
-        <!-- Cabeçalho -->
-        <header class="cabecalho">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GSTec Informática</title>
+    <meta name="description" content="Minha primeira página html de estudos">
+    <link rel="stylesheet" href="style/index_style.css">
+    <link rel="shortcut icon" href="logo-black.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Menu -->
+        <div class="Menu">
             <a href="index.html"><img class="img_logo" src="logo.png" alt="Ícone"></a>
-            <div class="div_cabecalho">
-                <nav class="menu">
-                    <button class="menu_botao_home"><a class="menu_item" href="index.html">Home</a></button>
-                    <button class="menu_botao_saiba_mais"><a class="menu_item" href="https://www.facebook.com/profile.php?id=100009622183921">Saiba mais</a></button>
-                </nav>
+            <nav class="Navegacao">
+                <button class="botao_home"><a class="menu_item" href="index.html">Home</a></button>
+                <button class="botao_saiba_mais"><a class="menu_item" href="https://www.facebook.com/profile.php?id=100009622183921">Saiba mais</a></button>
+            </nav>
+        </div>
+
+        <!-- Primeira Seção (Cabeçalho)-->
+        <section class="Primeira_Secao">
+            <div class="div_primeira_secao">
+                <div class="textos_Primeira_secao">
+                    <h1 class="secao_1_titulo">GSTec Informática</h1>
+                    <h2 class="secao_1_subtitulo">O lar da tecnologia</h2>
+                    <button class="secao_1_botao"><a class="secao_1_txt_botao" href="orcamento.html">Faça já seu orçamento!!</a></button>
+                </div>
+                <div class="div_img_home"><img class="img_secao_1" src="logo.png" alt="imagem2"></div>
             </div>
-        </header>
+        </section>
+    </header>
 
     <!-- Conteúdo principal -->
-        <main class="principal">
-            <!-- Primeira Seção-->
-            <section class="principal_secao_1">
-                <div class="principal_div_1">
-                    <h1 class="principal_secao_1_titulo">GSTec Informática</h1>
-                    <h2 class="principal_secao_1_subtitulo">O lar da tecnologia</h2>
-                    <div class="principal_secao_1_div_botao"><button class="principal_secao_1_botao"><a class="principal_secao_1_txt_botao" 
-                        href="https://google.com">Faça já seu orçamento!!</a></button></div>
-                </div>
-                <div class="principal_secao_1_img"><img class="img_secao_1" src="logo.png" alt="imagem2"></div>
-            </section>
-            <!-- Segunda Seção -->
-            <section class="principal_secao_2">
-                <div class="principal_div_2">
-                    <div class="principal_secao_2-2_titulo"><h3 class="principal_secao_2_titulo">O que podemos te oferecer?</h3></div>
-                    <div class="principal_secao_2_paragrafo_div_1">
-                        <p class="principal_secao_2_paragrafo">1. <strong>Responsabilidade</strong> e <strong>comprometimento</strong> com seu equipamento</p>
-                        <p class="principal_secao_2_paragrafo">2. <strong>Agilidade</strong> na hora da entrega</p>
-                        <p class="principal_secao_2_paragrafo">3. Atendimento <strong>personalizado</strong></p>
-                    </div>
-                </div>
-            </section>
+    <main class="principal">
+        <!-- Segunda Seção -->
+        <section class="principal_secao_2">
+            <div class="principal_div_2">
+                <h1>O que podemos te oferecer?</h1>
+                <p>1. <strong>Responsabilidade</strong> e <strong>comprometimento</strong> com seu equipamento</p>
+                <p>2. <strong>Agilidade</strong> na hora da entrega</p>
+                <p>3. Atendimento <strong>personalizado</strong></p>
+            </div>
+        </section>
 
-        </main>
-        
+    </main>
+
     <!-- Rodapé -->
-        <footer class="rodape">
-                <p class="rodape_txt_dev"><small>Feito e desenvolvido por Generson</small></p>
-        </footer>
+    <footer class="rodape">
+        <p>Feito e desenvolvido por Generson</p>
+    </footer>
 
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
