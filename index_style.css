@@ -16,7 +16,7 @@ body {
     padding-top: 1.5em;
     align-content: center;
     padding-bottom: 2em;
-    background: url("/image/fundo.jpg");
+    background: url("fundo.jpg");
     background-repeat: none;
     background-size: cover;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.356);
