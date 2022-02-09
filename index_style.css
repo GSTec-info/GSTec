@@ -48,11 +48,12 @@ body {
 .menu_item {
     color: #fafafd;
     font-size: 1.2em;
+    font-weith: bold;
 }
 
 .botao_home {
     border: none;
-    background-color: #0aa6c2;
+    background-color: #0085EB;
     width: 120px;
     height: 30px;
     border-end-start-radius: 10px;
@@ -66,7 +67,7 @@ body {
 
 .botao_saiba_mais {
     border: none;
-    background-color: #0aa6c2;
+    background-color: #0085EB;
     width: 120px;
     height: 30px;
     border-start-end-radius: 10px;
