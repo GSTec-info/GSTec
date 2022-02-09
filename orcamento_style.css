@@ -1,3 +1,5 @@
+/*-------- Configurações Globais -----------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,108 +11,106 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/*----------- Menu de Navegação ------------------------------*/
+
 .cabecalho {
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 1.5em;
-    align-items: center;
-    width: 100%;
+    align-content: center;
+    padding-bottom: 2em;
+    background: url("fundo.jpg");
+    background-repeat: none;
+    background-size: cover;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.356);
 }
 
-.cabecalho_1 {
-    background-color: transparent;
+.Menu {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 50px;
-    border-radius: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .img_logo {
+    height: 48px;
     display: block;
-    height: 2.5em;
 }
 
-.menu_botao_home {
-    border: none;
-    background-color: transparent;
-    padding: 1em;
+
+/* ----- Botões do Menu ------------------------- */
+
+.Navegacao {
+    display: flex;
+    gap: 0.8px;
+    flex-wrap: wrap;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
-.menu_botao_home:hover {
-    border: none;
-    background-color: rgba(0, 0, 255, 0.404);
+.menu_item {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-.menu_item {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.486);
-    font-weight: bold;
-    font-size: 15px;
+.botao_home {
+    border: none;
+    background-color: #0085EB;
+    width: 120px;
+    height: 30px;
+    border-end-start-radius: 10px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
 }
+
+.botao_home:hover {
+    background-color: #0906f0;
+}
+
+.botao_saiba_mais {
+    border: none;
+    background-color: #0085EB;
+    width: 120px;
+    height: 30px;
+    border-start-end-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.botao_saiba_mais:hover {
+    background-color: #0906f0;
+}
+
+
+/*------ Início do formulário ----------------------*/
 
 .principal {
-    padding-top: 8em;
-    background: url("Fundo.jpeg");
-    background-repeat: none;
-    background-size: cover;
+    padding-top: 2em;
 }
 
-.titulo {
-    text-align: center;
-    padding-bottom: 1.5em;
-}
 
-.Campos {
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.div1 {
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.486);
-    border-radius: 1em;
-}
-
-.CampoNome {
-    display: flex;
-    flex-direction: row;
-}
-
-.CampoNome>input_nome {
-    width: 100%;
-    background-color: violet;
-}
-
-.P_Nome {
-    color: white;
-    padding-right: 1em;
-}
+/*----- Rodapé -----------------------------------------*/
 
 .rodape {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgb(0, 0, 0);
-    margin: 0px;
-    padding: 0px;
-    height: 40px;
-}
-
-.rodape>img {
-    width: 80px;
-    margin: 1em;
+    justify-content: flex-end;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.418);
 }
 
 .rodape>p {
-    color: white;
-    font-size: 0.8em;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 600px) {
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 10px;
+    }
 }
