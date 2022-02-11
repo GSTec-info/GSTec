@@ -1,7 +1,7 @@
 /*-------- Configurações Globais -----------------------------*/
 
 :root {
-    --Fundo1: url("/image/fundo.jpg");
+    --Fundo1: url("fundo.jpg");
     --Font-Family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
