@@ -1,3 +1,8 @@
+:root {
+    --Fundo1: url("/image/fundo.jpg");
+    --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +11,7 @@
 }
 
 body {
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
 
@@ -16,7 +21,7 @@ body {
     padding-top: 1.5em;
     align-content: center;
     padding-bottom: 2em;
-    background: url("fundo.jpg");
+    background: var(--Fundo1);
     background-repeat: none;
     background-size: cover;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.356);
@@ -46,7 +51,7 @@ body {
 }
 
 .menu_item {
-    color: #fafafd;
+    color: #ffffff;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -109,7 +114,6 @@ body {
 }
 
 .secao_1_titulo {
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     text-align: center;
     font-size: 100px;
     color: #03d3f3;
@@ -117,7 +121,6 @@ body {
 }
 
 .secao_1_subtitulo {
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     font-size: 50px;
     color: rgb(245, 237, 237);
     font-weight: 400;
@@ -132,14 +135,13 @@ body {
     border: none;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 20px;
     color: #2F2325;
     cursor: pointer;
 }
 
 .secao_1_txt_botao {
     color: #ffffff;
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     font-weight: 400;
 }
 
