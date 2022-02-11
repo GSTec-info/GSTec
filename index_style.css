@@ -1,5 +1,5 @@
 :root {
-    --Fundo1: url("/image/fundo.jpg");
+    --Fundo1: url("fundo.jpg");
     --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
