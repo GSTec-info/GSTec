@@ -7,8 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>GSTec - Orçamento</title>
     <meta name="description" content="GSTec - Orçamento">
-    <link rel="stylesheet" href="orcamento_style.css" type="text/css" media="screen">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/orcamento_style.css" type="text/css" media="screen">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="GSTec">
+    <meta name="application-name" content="GSTec">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Responsividade da Página -->
     <style>
         @media only screen and (max-width: 480px) {
@@ -47,7 +57,35 @@
 
     <!-- Formulário -->
     <main class="principal">
-
+        <section id="cabecalho_2">
+            <h1 style="text-align: center; font-size: 2.8em;">Seja Bem Vindo!!!</h1>
+            <h2 style="text-align: center; font-size: 1.3em;">Preencha o formulário abaixo que logo entraremos em contato</h2>
+        </section>
+        <section id="secao_contato">
+            <form name="Contato" method="post" action="/dados_formulario.php">
+                <fieldset id="campos_contato">
+                    <div class="div_campos">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" name="nome">
+                    </div>
+                    <div class="div_campos">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone">
+                    </div>
+                    <div class="div_campos">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="div_obs">
+                        <label for="Observacoes">Descrição do Problema</label>
+                        <textarea name="Observacoes" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <div class="div_botao">
+                    <button id="botao_enviar" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
     </main>
 
 
