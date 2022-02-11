@@ -1,5 +1,10 @@
 /*-------- Configurações Globais -----------------------------*/
 
+:root {
+    --Fundo1: url("/image/fundo.jpg");
+    --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
 
@@ -18,7 +23,7 @@ body {
     padding-top: 1.5em;
     align-content: center;
     padding-bottom: 2em;
-    background: url("fundo.jpg");
+    background: var(--Fundo1);
     background-repeat: none;
     background-size: cover;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.356);
@@ -104,13 +109,4 @@ body {
     font-size: 15px;
     color: rgb(255, 255, 255);
     text-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
-}
-
-@media(max-width: 600px) {
-    .rodape {
-        padding: 5px;
-    }
-    .rodape>p {
-        font-size: 10px;
-    }
 }
