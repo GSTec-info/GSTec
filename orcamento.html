@@ -22,12 +22,18 @@
     <!-- Responsividade da Página -->
     <style>
         @media only screen and (max-width: 480px) {
-            #secao_contato {
-                padding-left: 5%;
-                padding-right: 5%;
-                padding-top: 2em;
-                padding-bottom: 2em;
+            #cabecalho_2>h1 {
+                font-size: 2em;
+                padding-bottom: 0.5em;
             }
+            #cabecalho_2>h2 {
+                font-size: 0.9em;
+            }
+            /*=== Preenchimento dos dados =====*/
+            fieldset {
+                width: 350px;
+            }
+            /*=== Rodapé =====*/
             .rodape {
                 padding: 5px;
             }
@@ -37,11 +43,11 @@
         }
         
         @media only screen and (min-width: 481px) and (max-width: 1400px) {
-            #secao_contato {
-                padding-left: 10%;
-                padding-right: 10%;
-                padding-top: 2em;
-                padding-bottom: 2em;
+            #cabecalho_2>h1 {
+                font-size: 2.2em;
+            }
+            #cabecalho_2>h2 {
+                font-size: 1em;
             }
             /* ------- rodapé ---------*/
             .rodape {
@@ -56,10 +62,12 @@
 
 <body>
     <!-- Cabeçalho -->
+    <!--/*----------- Menu de Navegação ------------------------------*/-->
     <header class="cabecalho">
         <!-- Menu -->
         <div class="Menu">
             <a href="index.html"><img class="img_logo" src="logo.png" alt="Ícone"></a>
+            <!--/* ----- Botões do Menu ------------------------- */-->
             <nav class="Navegacao">
                 <button class="botao_home"><a class="menu_item" href="index.html">Home</a></button>
                 <button class="botao_saiba_mais"><a class="menu_item" href="saiba_mais.html">Saiba mais</a></button>
@@ -69,16 +77,24 @@
 
     <!-- Formulário -->
     <main class="principal">
+        <!--/*=== Cabeçalho 2 (Título formulário) =====*/-->
         <section id="cabecalho_2">
-            <h1 style="text-align: center; font-size: 2.8em;">Seja Bem Vindo!!!</h1>
-            <h2 style="text-align: center; font-size: 1.3em;">Preencha o formulário abaixo que logo entraremos em contato</h2>
+            <h1>Seja Bem Vindo!!!</h1>
+            <h2>Preencha o formulário abaixo e em breve entraremos em contato</h2>
         </section>
+        <!--/*======== Seção do formulário ========-->
         <section id="secao_contato">
             <form name="Contato" method="post" action="/dados_formulario.php">
+                <!--/*======== Área de preenchimento dos dados ========*/-->
                 <fieldset id="campos_contato">
+                    <!--/*======== labels e campos ========*/-->
                     <div class="div_campos">
-                        <label for="nome">Seu nome</label>
+                        <label for="nome">Nome</label>
                         <input type="text" name="nome">
+                    </div>
+                    <div class="div_campos">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco">
                     </div>
                     <div class="div_campos">
                         <label for="telefone">Telefone</label>
@@ -88,15 +104,31 @@
                         <label for="email">Email</label>
                         <input type="email" name="email">
                     </div>
+                    <div id="op_equip" class="div_campos">
+                        <label>Tipo(s) de Equipamento(s)</label>
+                        <ol type="none">
+                            <li class="op_equip">
+                                <input type="checkbox">
+                                <label>Notebook</label>
+                            </li>
+                            <li class="op_equip">
+                                <input type="checkbox">
+                                <label>Desktop (PC)</label>
+                            </li>
+                        </ol>
+                    </div>
                     <div class="div_obs">
                         <label for="Observacoes">Descrição do Problema</label>
                         <textarea name="Observacoes" cols="30" rows="10"></textarea>
                     </div>
                 </fieldset>
+                <!--/*======== Botão para Enviar ========*/-->
                 <div class="div_botao">
                     <button id="botao_enviar" type="submit">Enviar</button>
                 </div>
             </form>
+
+
         </section>
     </main>
 
