@@ -2,6 +2,7 @@
 
 :root {
     --Fundo1: url("../image/fundo.jpg");
+    --Fundo2: url("../image/eletronics3.png");
     --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     --Sombra-padrao: 3px 3px 8px rgba(0, 0, 0, 0.356);
 }
@@ -91,20 +92,35 @@ body {
 /*------ Formulário ----------------------*/
 
 .principal {
+    display: flex;
+    flex-direction: column;
     padding-top: 2em;
+    align-items: center;
+    background: var(--Fundo2);
+    background-size: cover;
+    background-repeat: none;
+    box-shadow: inset var(--Sombra-padrao);
 }
 
-#cabecalho_2 {
-    padding-left: 30%;
-    padding-right: 30%;
+
+/*=== Cabeçalho 2 (Título formulário) =====*/
+
+#cabecalho_2>h1 {
+    font-size: 2.8em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+#cabecalho_2>h2 {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: normal;
 }
 
 
 /*======== Seção do formulário ========*/
 
 #secao_contato {
-    padding-left: 30%;
-    padding-right: 30%;
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -114,10 +130,11 @@ body {
 
 fieldset {
     border: 0px;
-    background-color: #1e558077;
+    background-color: #005ba183;
     border-radius: 0.6em;
     padding: 1.5em;
     box-shadow: var(--Sombra-padrao);
+    width: 500px;
 }
 
 fieldset>.div_campos {
@@ -131,14 +148,37 @@ fieldset>.div_campos {
 /*======== labels e campos ========*/
 
 .div_campos>label {
-    display: block;
-    width: 100px;
+    width: 150px;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.527);
-    font-weight: bold;
+    font-weight: normal;
 }
 
-label::after {
+.div_campos>label::after {
     content: ': ';
+}
+
+#op_equip {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#op_equip>label {
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+}
+
+.op_equip {
+    align-items: center;
+    box-shadow: none;
+    width: 100%;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.op_equip>input {
+    box-shadow: none;
+    width: 30px;
 }
 
 input,
@@ -169,6 +209,10 @@ input:hover {
     font-weight: bold;
 }
 
+.div_obs>label::after {
+    content: ":";
+}
+
 
 /*======== Botão para Enviar ========*/
 
@@ -179,8 +223,8 @@ input:hover {
 #botao_enviar {
     border: none;
     background-color: #0085EB;
-    width: 8em;
-    height: 30px;
+    width: 100%;
+    height: 45px;
     border-radius: 0.3em;
     cursor: pointer;
     color: #ffffff;
