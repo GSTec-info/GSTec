@@ -91,15 +91,15 @@
                     <!--/*======== labels e campos ========*/-->
                     <div class="div_campos">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome">
+                        <input type="text" name="nome" required>
                     </div>
                     <div class="div_campos">
                         <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco">
+                        <input type="text" name="endereco" required>
                     </div>
                     <div class="div_campos">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone">
+                        <input type="tel" name="telefone" required>
                     </div>
                     <div class="div_campos">
                         <label for="email">Email</label>
@@ -109,12 +109,12 @@
                         <label>Tipo(s) de Equipamento(s)</label>
                         <ol type="none">
                             <li class="op_equip">
-                                <input type="checkbox">
-                                <label>Notebook</label>
+                                <input value="Notebook" type="checkbox" name="notebook">
+                                <label for="notebook">Notebook</label>
                             </li>
                             <li class="op_equip">
-                                <input type="checkbox">
-                                <label>Desktop (PC)</label>
+                                <input value="Desktop" type="checkbox" name="desktop" selected>
+                                <label for="desktop">Desktop (PC)</label>
                             </li>
                         </ol>
                     </div>
