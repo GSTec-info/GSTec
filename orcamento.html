@@ -84,26 +84,25 @@
         </section>
         <!--/*======== Seção do formulário ========-->
         <section id="secao_contato">
-            <!--/*======= Início do Formulário ==========*/-->
-            <form name="Contato" method="post">
+            <form>
                 <!--/*======== Área de preenchimento dos dados ========*/-->
                 <fieldset id="campos_contato">
                     <!--/*======== labels e campos ========*/-->
                     <div class="div_campos">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" required>
+                        <input type="text" name="nome" placeholder="Nome e Sobrenome" required>
                     </div>
                     <div class="div_campos">
                         <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco" required>
+                        <input type="text" name="endereco" placeholder="Rua, Avenida ..." required>
                     </div>
                     <div class="div_campos">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" required>
+                        <input type="tel" name="telefone" placeholder="(00) 00000-00000" maxlength="16" required>
                     </div>
                     <div class="div_campos">
                         <label for="email">Email</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" placeholder="nome@email.com">
                     </div>
                     <div id="op_equip" class="div_campos">
                         <label>Tipo(s) de Equipamento(s)</label>
@@ -115,8 +114,11 @@
                             <li class="op_equip">
                                 <input value="Desktop" type="checkbox" name="desktop" checked>
                                 <label for="desktop">Desktop (PC)</label>
-                            </li>
                         </ol>
+                    </div>
+                    <div class="div_campos">
+                        <label for="modelo_equip">Modelo</label>
+                        <input type="text" name="modelo_equip">
                     </div>
                     <div class="div_obs">
                         <label for="Observacoes">Descrição do Problema</label>
