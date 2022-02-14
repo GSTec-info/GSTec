@@ -7,16 +7,16 @@
     <title>GSTec Informática</title>
     <meta name="description" content="GSTec - O lar da tecnologia">
     <link rel="stylesheet" href="style/index_style.css" type="text/css" media="screen">
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="apple-mobile-web-app-title" content="GSTec">
     <meta name="application-name" content="GSTec">
     <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <style>
@@ -59,9 +59,8 @@
                 align-content: center;
                 width: 300px;
                 height: 60px;
-            }
-            .secao_1_txt_botao {
-                font-size: 1em;
+                font-size: 1.5em;
+                padding: 13px;
             }
             /* ------- Seção 2 --------*/
             .principal_secao_2 {
@@ -71,7 +70,7 @@
                 font-size: 2em;
                 padding-bottom: 0.8em;
             }
-            .principal_div_2>p {
+            li {
                 font-size: 1.3em;
             }
             /* ------- rodapé ---------*/
@@ -104,19 +103,18 @@
                 align-content: center;
                 width: 360px;
                 height: 60px;
-            }
-            .secao_1_txt_botao {
-                font-size: 1.2em;
+                font-size: 1.5em;
+                padding: 15px;
             }
             /* ------- Seção 2 --------*/
             .principal_div_2 {
-                gap: 20px;
+                width: 600px;
             }
             .principal_div_2>h1 {
                 font-size: 2.5em;
                 padding-bottom: 0.8em;
             }
-            .principal_div_2>p {
+            li {
                 font-size: 1.5em;
             }
             /* ------- rodapé ---------*/
@@ -133,13 +131,13 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header class="cabecalho">
+    <header>
         <!-- Menu -->
         <div class="Menu">
             <a href="index.html"><img class="img_logo" src="logo.png" alt="Ícone"></a>
             <nav class="Navegacao">
-                <button class="botao_home"><a class="menu_item" href="index.html">Home</a></button>
-                <button class="botao_saiba_mais"><a class="menu_item" href="saiba_mais.html">Saiba mais</a></button>
+                <a class="botao_home" href="index.html">Home</a>
+                <a class="botao_saiba_mais" href="saiba_mais.html">Saiba mais</a>
             </nav>
         </div>
 
@@ -149,9 +147,11 @@
                 <div class="textos_Primeira_secao">
                     <h1 class="secao_1_titulo">GSTec Informática</h1>
                     <h2 class="secao_1_subtitulo">O lar da tecnologia</h2>
-                    <button class="secao_1_botao"><a class="secao_1_txt_botao" href="orcamento.html">Faça já seu orçamento!!</a></button>
+                    <a class="secao_1_botao" href="orcamento.html">Faça já seu orçamento!!</a>
                 </div>
-                <div class="div_img_home"><img class="img_secao_1" src="logo.png" alt="imagem2"></div>
+                <div class="div_img_home">
+                    <img class="img_secao_1" src="logo.png" alt="imagem2">
+                </div>
             </div>
         </section>
     </header>
@@ -162,9 +162,11 @@
         <section class="principal_secao_2">
             <div class="principal_div_2">
                 <h1>O que podemos te oferecer?</h1>
-                <p>1. <strong>Responsabilidade</strong> e <strong>comprometimento</strong> com seu equipamento</p>
-                <p>2. <strong>Agilidade</strong> na hora da entrega</p>
-                <p>3. Atendimento <strong>personalizado</strong></p>
+                <ol type="1.">
+                    <li><strong>Responsabilidade</strong> e <strong>comprometimento</strong> com seu equipamento</li>
+                    <li><strong>Agilidade</strong> na hora da entrega</li>
+                    <li>Atendimento <strong>personalizado</strong></li>
+                </ol>
             </div>
         </section>
 
