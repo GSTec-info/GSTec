@@ -1,5 +1,5 @@
 :root {
-    --Fundo1: url("../image/fundo.jpg");
+    --Fundo1: url("/image/fundo.jpg");
     --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     --Sombra-padrao: 0px 8px 8px rgba(0, 0, 0, 0.356);
 }
@@ -18,7 +18,7 @@ body {
 
 /* ---------- Cabeçalho -------------------------------------------------------------- */
 
-.cabecalho {
+header {
     padding-top: 1.5em;
     align-content: center;
     padding-bottom: 2em;
@@ -26,6 +26,7 @@ body {
     background-repeat: none;
     background-size: cover;
     box-shadow: var(--Sombra-padrao);
+    margin: auto;
 }
 
 .Menu {
@@ -45,26 +46,22 @@ body {
 
 .Navegacao {
     display: flex;
-    gap: 0.8px;
     flex-wrap: wrap;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
-.menu_item {
-    color: #ffffff;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
 .botao_home {
-    border: none;
+    text-align: center;
+    padding: 3px;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
     background-color: #0085EB;
     width: 120px;
     height: 30px;
     border-end-start-radius: 10px;
     border-top-left-radius: 10px;
-    cursor: pointer;
 }
 
 .botao_home:hover {
@@ -72,13 +69,18 @@ body {
 }
 
 .botao_saiba_mais {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
     border: none;
     background-color: #0085EB;
-    width: 120px;
-    height: 30px;
     border-start-end-radius: 10px;
     border-bottom-right-radius: 10px;
-    cursor: pointer;
+    padding: 3px;
+    width: 120px;
+    height: 30px;
+    margin-left: 2px;
 }
 
 .botao_saiba_mais:hover {
@@ -90,6 +92,7 @@ body {
 
 .Primeira_Secao {
     padding-top: 5em;
+    margin: auto;
 }
 
 .div_primeira_secao {
@@ -130,20 +133,16 @@ body {
 }
 
 .secao_1_botao {
-    background-color: #0906f0;
-    width: 500px;
-    height: 60px;
-    border: none;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    font-size: 20px;
-    color: #2F2325;
-    cursor: pointer;
-}
-
-.secao_1_txt_botao {
     color: #ffffff;
     font-weight: 400;
+    font-size: 30px;
+    width: 500px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #0906f0;
 }
 
 .secao_1_botao:hover {
@@ -154,29 +153,29 @@ body {
 /* ---------- Seção 2 -------------------------------------------------------------- */
 
 .principal_secao_2 {
-    padding: 50px 20% 50px 20%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
 .principal_div_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
     backdrop-filter: blur(5px);
     background-color: rgba(117, 117, 117, 0.527);
     border-radius: 1.5rem;
-    padding: 1em;
+    padding: 1.5em;
+    width: 800px;
 }
 
 .principal_div_2>h1 {
     text-align: center;
     font-size: 50px;
-    text-shadow: 10px 1px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5em;
 }
 
-.principal_div_2>p {
+li {
     font-size: 30px;
-    padding: 10px;
+    padding: 0.1em;
+    margin: 1.5em;
 }
 
 
