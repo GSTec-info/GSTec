@@ -98,7 +98,7 @@ header {
 .div_primeira_secao {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .textos_Primeira_secao {
@@ -111,10 +111,11 @@ header {
 .div_img_home {
     display: block;
     height: 100%;
+    margin-left: 15em;
 }
 
 .img_secao_1 {
-    height: 100px;
+    height: 150px;
 }
 
 .secao_1_titulo {
