@@ -2,7 +2,7 @@
 
 :root {
     --Fundo1: url("../image/fundo.jpg");
-    --Fundo2: url("../image/electronics3.png");
+    --Fundo2: url("../image/electronics.jpg");
     --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     --Sombra-padrao: 3px 3px 8px rgba(0, 0, 0, 0.356);
 }
