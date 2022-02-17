@@ -16,6 +16,10 @@ body {
     font-family: var(--Font-Family);
 }
 
+main {
+    height: 100vh;
+}
+
 
 /*----------- Menu de Navegação ------------------------------*/
 

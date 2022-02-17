@@ -18,6 +18,10 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+main {
+    height: 100vh;
+}
+
 
 /*----------- Menu de Navegação ------------------------------*/
 
