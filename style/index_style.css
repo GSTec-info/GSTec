@@ -157,6 +157,12 @@ header {
 
 /* ---------- Seção 2 -------------------------------------------------------------- */
 
+main {
+    background-image: url('../image/negocio2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .principal_secao_2 {
     display: flex;
     justify-content: center;
@@ -165,22 +171,27 @@ header {
 
 .principal_div_2 {
     backdrop-filter: blur(5px);
-    background-color: rgba(117, 117, 117, 0.527);
+    background-color: #005ba183;
     border-radius: 1.5rem;
-    padding: 1.5em;
+    padding: 1.5em 2.1em 0px 2.1em;
     width: 800px;
 }
 
 .principal_div_2>h1 {
     text-align: center;
     font-size: 50px;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
 }
 
-li {
+.topico {
+    display: flex;
     font-size: 30px;
-    padding: 0.1em;
-    margin: 1.5em;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.topico>img {
+    margin-right: 20px;
 }
 
 
