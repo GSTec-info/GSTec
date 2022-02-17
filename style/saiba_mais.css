@@ -12,6 +12,13 @@
     text-decoration: none;
 }
 
+button {
+    font-family: var(--fonte-padrao);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
 body {
     font-family: var(--Font-Family);
 }
@@ -57,10 +64,8 @@ header {
 }
 
 .botao_home {
-    text-align: center;
-    padding: 3px;
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
     background-color: #0085EB;
     width: 120px;
@@ -73,22 +78,19 @@ header {
     background-color: #0906f0;
 }
 
-.botao_saiba_mais {
-    text-align: center;
+.botao_orcamento {
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
-    border: none;
     background-color: #0085EB;
     border-start-end-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 3px;
     width: 120px;
     height: 30px;
     margin-left: 2px;
 }
 
-.botao_saiba_mais:hover {
+.botao_orcamento:hover {
     background-color: #0906f0;
 }
 

@@ -11,6 +11,13 @@
     text-decoration: none;
 }
 
+button {
+    font-family: var(--fonte-padrao);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
 body {
     font-family: var(--fonte-padrao);
 }
@@ -56,10 +63,8 @@ header {
 }
 
 .botao_home {
-    text-align: center;
-    padding: 3px;
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
     background-color: #0085EB;
     width: 120px;
@@ -73,15 +78,12 @@ header {
 }
 
 .botao_saiba_mais {
-    text-align: center;
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
-    border: none;
     background-color: #0085EB;
     border-start-end-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 3px;
     width: 120px;
     height: 30px;
     margin-left: 2px;
@@ -139,12 +141,10 @@ header {
 
 .secao_1_botao {
     color: #ffffff;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 30px;
     width: 500px;
     height: 60px;
-    padding: 10px;
-    text-align: center;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     background-color: #0906f0;
