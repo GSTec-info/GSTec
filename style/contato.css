@@ -70,8 +70,7 @@ header {
     background-color: #0085EB;
     width: 120px;
     height: 30px;
-    border-end-start-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
 }
 
 .botao_home:hover {

@@ -80,7 +80,7 @@ header {
     background-color: #0906f0;
 }
 
-.botao_saiba_mais {
+.botao_contato {
     color: #ffffff;
     font-size: 1.2em;
     font-weight: bold;
@@ -92,7 +92,7 @@ header {
     margin-left: 2px;
 }
 
-.botao_saiba_mais:hover {
+.botao_contato:hover {
     background-color: #0906f0;
 }
 
