@@ -89,20 +89,11 @@ header {
     justify-content: flex-end;
     padding: 10px;
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: #005a9e;
 }
 
 .rodape>p {
     font-size: 15px;
     color: rgb(255, 255, 255);
     text-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
-}
-
-@media(max-width: 600px) {
-    .rodape {
-        padding: 5px;
-    }
-    .rodape>p {
-        font-size: 10px;
-    }
 }

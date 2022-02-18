@@ -207,7 +207,7 @@ main {
     justify-content: flex-end;
     padding: 10px;
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: #005a9e;
 }
 
 .rodape>p {
