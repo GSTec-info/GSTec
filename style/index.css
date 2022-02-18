@@ -1,0 +1,217 @@
+:root {
+    --Fundo1: url("../image/fundo.jpg");
+    --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    --Sombra-padrao: 0px 8px 8px rgba(0, 0, 0, 0.356);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--fonte-padrao);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+}
+
+main {
+    height: 100vh;
+}
+
+
+/* ---------- Cabeçalho -------------------------------------------------------------- */
+
+header {
+    padding-top: 1.5em;
+    align-content: center;
+    padding-bottom: 2em;
+    background: var(--Fundo1);
+    background-repeat: none;
+    background-size: cover;
+    box-shadow: var(--Sombra-padrao);
+    margin: auto;
+}
+
+.Menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img_logo {
+    height: 48px;
+    display: block;
+}
+
+
+/* ------------------------------ */
+
+.Navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.botao_home {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #0085EB;
+    width: 120px;
+    height: 30px;
+    border-end-start-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.botao_home:hover {
+    background-color: #0906f0;
+}
+
+.botao_contato {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #0085EB;
+    border-start-end-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 120px;
+    height: 30px;
+    margin-left: 2px;
+}
+
+.botao_contato:hover {
+    background-color: #0906f0;
+}
+
+
+/* ---------- Seção 1 -------------------------------------------------------------- */
+
+.Primeira_Secao {
+    padding-top: 5em;
+    margin: auto;
+}
+
+.div_primeira_secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos_Primeira_secao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.div_img_home {
+    display: block;
+    height: 100%;
+    margin-left: 15em;
+}
+
+.img_secao_1 {
+    height: 150px;
+}
+
+.secao_1_titulo {
+    text-align: center;
+    font-size: 100px;
+    color: #03d3f3;
+    text-shadow: 5px 5px 5px rgba(78, 77, 77, 0.719);
+}
+
+.secao_1_subtitulo {
+    font-size: 50px;
+    color: rgb(245, 237, 237);
+    font-weight: 400;
+    text-shadow: 1px 5px 5px rgba(7, 7, 7, 0.719);
+    text-decoration: #0906f0;
+}
+
+.secao_1_botao {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    width: 500px;
+    height: 60px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #0906f0;
+}
+
+.secao_1_botao:hover {
+    background-color: rgb(2, 15, 92);
+}
+
+
+/* ---------- Seção 2 -------------------------------------------------------------- */
+
+main {
+    background-image: url('../image/negocio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 0px 20px 30px rgba(0, 0, 0, 0.589);
+}
+
+.principal_secao_2 {
+    display: flex;
+    justify-content: center;
+    padding: 20vh 2.1em 0px 2.1em;
+}
+
+.principal_div_2 {
+    backdrop-filter: blur(5px);
+    background-color: #e2e2e298;
+    border-radius: 1.5rem;
+    padding: 1.5em 2.1em 0px 2.1em;
+    width: 800px;
+}
+
+.principal_div_2>h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1.5em;
+}
+
+.topico {
+    font-weight: normal;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.topico>img {
+    margin-right: 20px;
+}
+
+
+/* ------------ Rodapé ----------------------------------------------- */
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.rodape>p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+}
