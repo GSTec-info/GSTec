@@ -11,6 +11,19 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <style>
         @media screen and (max-width: 480px) {
+            #secao2 {
+                margin-left: 0em;
+                margin-right: 0em;
+            }
+            #div_main {
+                display: block;
+                width: 100%;
+            }
+            #div_SAC {
+                display: block;
+                width: 90%;
+                margin: 1.3em;
+            }
             .rodape {
                 padding: 5px;
             }
@@ -19,7 +32,104 @@
             }
         }
         
-        @media screen and (min-width: 481px) and (max-width: 1400px) {
+        @media screen and (min-width: 481px) and (max-width: 920px) {
+            #secao2 {
+                margin-left: 0em;
+                margin-right: 0em;
+            }
+            #div_main {
+                display: block;
+                width: 100%;
+            }
+            #div_SAC {
+                display: block;
+                width: 90%;
+                margin: 1.3em;
+            }
+            /* ------- rodapé ---------*/
+            .rodape {
+                padding: 5px;
+            }
+            .rodape>p {
+                font-size: 0.8em;
+            }
+        }
+        
+        @media screen and (min-width: 921px) and (max-width: 1200px) {
+            #secao2 {
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+            #div_main {
+                width: 100%;
+            }
+            #div_SAC {
+                width: 90%;
+                margin: 1.3em;
+            }
+            /* ------- rodapé ---------*/
+            .rodape {
+                padding: 5px;
+            }
+            .rodape>p {
+                font-size: 0.8em;
+            }
+        }
+        
+        @media screen and (min-width: 1201px) and (max-width: 1400px) {
+            #secao2 {
+                margin-left: 9em;
+                margin-right: 9em;
+            }
+            #div_main {
+                width: 100%;
+            }
+            #div_SAC {
+                width: 90%;
+                margin: 1.3em;
+            }
+            /* ------- rodapé ---------*/
+            .rodape {
+                padding: 5px;
+            }
+            .rodape>p {
+                font-size: 0.8em;
+            }
+        }
+        
+        @media screen and (min-width: 1401px) and (max-width: 1600px) {
+            #secao2 {
+                margin-left: 15em;
+                margin-right: 15em;
+            }
+            #div_main {
+                width: 100%;
+            }
+            #div_SAC {
+                width: 90%;
+                margin: 1.3em;
+            }
+            /* ------- rodapé ---------*/
+            .rodape {
+                padding: 5px;
+            }
+            .rodape>p {
+                font-size: 0.8em;
+            }
+        }
+        
+        @media screen and (min-width: 1601px) and (max-width: 1900px) {
+            #secao2 {
+                margin-left: 20em;
+                margin-right: 20em;
+            }
+            #div_main {
+                width: 100%;
+            }
+            #div_SAC {
+                width: 90%;
+                margin: 1.3em;
+            }
             /* ------- rodapé ---------*/
             .rodape {
                 padding: 5px;
@@ -45,8 +155,50 @@
 
     <!-- Corpo -->
     <main>
-        <section>
+        <section id="secao1">
+            <h1 id="titulo_faleConosco">Fale Conosco</h1>
+        </section>
 
+        <section id="secao2">
+            <div id="div_main">
+                <div id="div_SAC">
+                    <h1 class="titulo_SAC">SAC</h1>
+                    <p><strong>Telefones:</strong> <br><br>(16) 99620-8120 <br>(16) 98119-1353</p>
+                    <h1 class="titulo_SAC">Links</h1>
+                    <div>
+                        <a href="#">Facebook</a>
+                        <a href="#">Linkedin</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+
+                <form>
+                    <fieldset>
+                        <div id="div1_campos">
+                            <div class="campo">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome">
+                            </div>
+                            <div class="campo">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" name="telefone">
+                            </div>
+                            <div class="campo">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+
+                        <div id="div2_campos">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="campo_mensagem" cols="50" rows="6"></textarea>
+                        </div>
+
+                        <button type="submit" id="botão_enviar">Enviar</button>
+
+                    </fieldset>
+                </form>
+            </div>
         </section>
     </main>
 

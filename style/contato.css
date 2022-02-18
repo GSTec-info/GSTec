@@ -2,7 +2,7 @@
 
 :root {
     --Fundo1: url("../image/fundo.jpg");
-    --Font-Family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    --fonte-padrao: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 * {
@@ -20,11 +20,7 @@ button {
 }
 
 body {
-    font-family: var(--Font-Family);
-}
-
-main {
-    height: 100vh;
+    font-family: var(--fonte-padrao);
 }
 
 
@@ -79,6 +75,121 @@ header {
 
 
 /*----- Corpo ------------------------------------------*/
+
+main {
+    background-image: url('../image/negocio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#secao1>h1 {
+    background-color: #ffffff73;
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.658);
+    padding: 0.5em 0px 0.5em 0px;
+}
+
+#secao2 {
+    margin-left: 25em;
+    margin-right: 25em;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+#div_main {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    gap: 8em;
+}
+
+.titulo_SAC {
+    color: #ffffff;
+    background: linear-gradient(to left, #ffffff, #005a9e);
+    margin-bottom: 0.8em;
+    padding-left: 0.5em;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+#div_SAC>p {
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+}
+
+#div_SAC>div {
+    padding-left: 1em;
+    word-spacing: 20px;
+}
+
+
+/*----- Início do formulário -------------------------------*/
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 0em 2em 2em 2em;
+}
+
+fieldset {
+    border: none;
+    border-radius: 10px;
+    padding: 2em;
+    width: 500px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.418);
+}
+
+#div_campos {
+    display: flex;
+    gap: 6em;
+}
+
+#div1_campos>div {
+    padding-bottom: 1.4em;
+}
+
+.campo {
+    display: flex;
+}
+
+label {
+    font-weight: bold;
+    width: 100px;
+}
+
+label::after {
+    content: ':';
+}
+
+.campo>input {
+    width: 100%;
+}
+
+.campo>input:focus {
+    background-color: #84caff;
+}
+
+#div2_campos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+/*----- Botão enviar -----------------------------------*/
+
+#botão_enviar {
+    width: 100%;
+    background-color: #0085EB;
+    font-size: 1.5em;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding: 0.5em 0px 0.5em 0px;
+}
 
 
 /*----- Rodapé -----------------------------------------*/
