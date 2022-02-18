@@ -99,19 +99,26 @@ header {
 
 /*------ Formulário ----------------------*/
 
-.principal {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2em;
+main {
     align-items: center;
     background: var(--Fundo2);
     background-size: cover;
     background-repeat: none;
     box-shadow: inset var(--Sombra-padrao);
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 
 /*=== Cabeçalho 2 (Título formulário) =====*/
+
+#cabecalho_2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #ffffff79;
+    backdrop-filter: blur(5px);
+    margin: auto;
+}
 
 #cabecalho_2>h1 {
     font-size: 2.8em;
@@ -129,8 +136,9 @@ header {
 /*======== Seção do formulário ========*/
 
 #secao_contato {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
 }
 
 
@@ -139,6 +147,7 @@ header {
 fieldset {
     border: 0px;
     background-color: #005ba183;
+    backdrop-filter: blur(5px);
     border-radius: 0.6em;
     padding: 1.5em;
     box-shadow: var(--Sombra-padrao);
@@ -157,8 +166,8 @@ fieldset>.div_campos {
 
 .div_campos>label {
     width: 150px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.527);
-    font-weight: normal;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.767);
 }
 
 .div_campos>label::after {
@@ -182,6 +191,7 @@ fieldset>.div_campos {
     width: 100%;
     display: flex;
     padding-bottom: 5px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.767);
 }
 
 .op_equip>input {
@@ -213,7 +223,7 @@ input:hover {
 .div_obs>label {
     width: 100%;
     padding-bottom: 0.5em;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.527);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.767);
     font-weight: bold;
 }
 
@@ -231,7 +241,7 @@ input:hover {
 #botao_enviar {
     border: none;
     background-color: #0085EB;
-    width: 100%;
+    width: 500px;
     height: 45px;
     border-radius: 0.3em;
     cursor: pointer;
