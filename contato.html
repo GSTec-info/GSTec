@@ -14,18 +14,19 @@
             #secao2 {
                 margin-left: 0em;
                 margin-right: 0em;
+                height: 100%;
             }
             #div_main {
                 display: block;
-                width: 100%;
             }
             #div_SAC {
                 display: block;
-                width: 90%;
+                width: 90vw;
                 margin: 1.3em;
             }
             .rodape {
                 padding: 5px;
+                width: 100vw;
             }
             .rodape>p {
                 font-size: 10px;
@@ -36,6 +37,7 @@
             #secao2 {
                 margin-left: 0em;
                 margin-right: 0em;
+                height: 100%;
             }
             #div_main {
                 display: block;
@@ -59,6 +61,7 @@
             #secao2 {
                 margin-left: 1em;
                 margin-right: 1em;
+                height: 100%;
             }
             #div_main {
                 width: 100%;
@@ -80,6 +83,7 @@
             #secao2 {
                 margin-left: 9em;
                 margin-right: 9em;
+                height: 100%;
             }
             #div_main {
                 width: 100%;
@@ -160,7 +164,7 @@
         </section>
 
         <section id="secao2">
-            <div id="div_main">
+            <section id="div_main">
                 <div id="div_SAC">
                     <h1 class="titulo_SAC">SAC</h1>
                     <p><strong>Telefones:</strong> <br><br>(16) 99620-8120 <br>(16) 98119-1353</p>
@@ -177,15 +181,15 @@
                         <div id="div1_campos">
                             <div class="campo">
                                 <label for="nome">Nome</label>
-                                <input type="text" name="nome">
+                                <input type="text" name="nome" placeholder="Nome e Sobrenome">
                             </div>
                             <div class="campo">
                                 <label for="telefone">Telefone</label>
-                                <input type="tel" name="telefone">
+                                <input type="tel" name="telefone" placeholder="(00) 00000-0000">
                             </div>
                             <div class="campo">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email">
+                                <input type="email" name="email" placeholder="Nome@email.com">
                             </div>
                         </div>
 
@@ -198,7 +202,7 @@
 
                     </fieldset>
                 </form>
-            </div>
+            </section>
         </section>
     </main>
 
