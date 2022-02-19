@@ -21,6 +21,7 @@ button {
 
 body {
     font-family: var(--fonte-padrao);
+    height: 100vh;
 }
 
 
@@ -130,7 +131,7 @@ main {
 
 /*----- Início do formulário -------------------------------*/
 
-fieldset {
+form>div {
     border: none;
     border-radius: 10px;
     padding: 2em;
@@ -169,6 +170,10 @@ label::after {
 
 .campo>input:focus {
     background-color: #84caff;
+}
+
+textarea {
+    width: 100%;
 }
 
 

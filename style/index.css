@@ -20,6 +20,7 @@ button {
 
 body {
     font-family: var(--fonte-padrao);
+    height: 100vh;
 }
 
 
@@ -160,7 +161,6 @@ main {
     background-attachment: fixed;
     background-position: center center;
     box-shadow: inset 0px 20px 30px rgba(0, 0, 0, 0.589);
-    height: 100vh;
     padding-bottom: 3em;
 }
 

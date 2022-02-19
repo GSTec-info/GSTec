@@ -24,8 +24,6 @@
                 margin-right: 0em;
             }
             #div_SAC {
-                display: block;
-                width: 90vw;
                 margin: 1.3em;
             }
             .rodape {
@@ -37,19 +35,47 @@
             }
         }
         
-        @media only screen and (min-width: 481px) and (max-width: 920px) {
+        @media only screen and (min-width: 481px) and (max-width: 690px) {
+            #secao2 {
+                margin-left: 0em;
+                margin-right: 0em;
+                height: 100%;
+            }
+            form>div {
+                margin: 0px;
+            }
+            #div_main {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 0px;
+                width: 100%;
+            }
+            #div_SAC {
+                margin: 1.3em;
+            }
+            form>div {
+                width: 100%;
+            }
+            /* ------- rodapé ---------*/
+            .rodape {
+                padding: 5px;
+            }
+            .rodape>p {
+                font-size: 0.8em;
+            }
+        }
+        
+        @media only screen and (min-width: 691px) and (max-width: 920px) {
             #secao2 {
                 margin-left: 0em;
                 margin-right: 0em;
                 height: 100%;
             }
             #div_main {
-                display: block;
                 width: 100%;
             }
             #div_SAC {
-                display: block;
-                width: 90%;
                 margin: 1.3em;
             }
             /* ------- rodapé ---------*/
@@ -65,13 +91,11 @@
             #secao2 {
                 margin-left: 1em;
                 margin-right: 1em;
-                height: 100%;
             }
             #div_main {
                 width: 100%;
             }
             #div_SAC {
-                width: 90%;
                 margin: 1.3em;
             }
             /* ------- rodapé ---------*/
@@ -87,13 +111,11 @@
             #secao2 {
                 margin-left: 9em;
                 margin-right: 9em;
-                height: 100%;
             }
             #div_main {
                 width: 100%;
             }
             #div_SAC {
-                width: 90%;
                 margin: 1.3em;
             }
             /* ------- rodapé ---------*/
@@ -114,7 +136,6 @@
                 width: 100%;
             }
             #div_SAC {
-                width: 90%;
                 margin: 1.3em;
             }
             /* ------- rodapé ---------*/
@@ -135,7 +156,6 @@
                 width: 100%;
             }
             #div_SAC {
-                width: 90%;
                 margin: 1.3em;
             }
             /* ------- rodapé ---------*/
@@ -181,7 +201,7 @@
                 </div>
 
                 <form>
-                    <fieldset>
+                    <div>
                         <div id="div1_campos">
                             <div class="campo">
                                 <label for="nome">Nome</label>
@@ -204,7 +224,7 @@
 
                         <button type="submit" id="botão_enviar">Enviar</button>
 
-                    </fieldset>
+                    </div>
                 </form>
             </section>
         </section>
