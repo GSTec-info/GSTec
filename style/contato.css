@@ -106,7 +106,7 @@ main {
     display: flex;
     justify-content: center;
     padding-top: 3em;
-    gap: 8em;
+    gap: 5em;
 }
 
 .titulo_SAC {
@@ -116,6 +116,7 @@ main {
     padding-left: 0.5em;
     border-radius: 10px;
     font-size: 1.5em;
+    width: 10em;
 }
 
 #div_SAC>p {
@@ -123,9 +124,17 @@ main {
     padding-bottom: 1.5em;
 }
 
-#div_SAC>div {
-    padding-left: 1em;
-    word-spacing: 20px;
+#div_SAC_Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links>img {
+    margin-left: 1em;
+    height: 25px;
+    width: 100px;
 }
 
 
