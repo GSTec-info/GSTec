@@ -100,40 +100,40 @@
                 <fieldset id="campos_contato">
                     <!--/*======== labels e campos ========*/-->
                     <div class="div_campos">
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" placeholder="Nome e Sobrenome" required>
+                        <label for="cNome">Nome</label>
+                        <input type="text" id="nome" name="cNome" placeholder="Nome e Sobrenome" required>
                     </div>
                     <div class="div_campos">
-                        <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco" placeholder="Rua, Avenida ..." required>
+                        <label for="cEndereco">Endereço</label>
+                        <input type="text" id="endereco" name="cEndereco" placeholder="Rua, Avenida ..." required>
                     </div>
                     <div class="div_campos">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" placeholder="(00) 00000-00000" maxlength="16" required>
+                        <label for="cTelefone">Telefone</label>
+                        <input type="tel" id="telefone" name="cTelefone" placeholder="(00) 00000-00000" maxlength="16" required>
                     </div>
                     <div class="div_campos">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="nome@email.com">
+                        <label for="cEmail">Email</label>
+                        <input type="email" id="email" name="cEmail" placeholder="nome@email.com">
                     </div>
                     <div id="op_equip" class="div_campos">
                         <label>Tipo(s) de Equipamento(s)</label>
                         <ol type="none">
                             <li class="op_equip">
-                                <input value="Notebook" type="checkbox" name="notebook">
+                                <input value="Notebook" id="check_notebook" type="checkbox" name="notebook">
                                 <label for="notebook">Notebook</label>
                             </li>
                             <li class="op_equip">
-                                <input value="Desktop" type="checkbox" name="desktop" checked>
+                                <input value="Desktop" id="check_desktop" type="checkbox" name="desktop" checked>
                                 <label for="desktop">Desktop (PC)</label>
                         </ol>
                     </div>
                     <div class="div_campos">
-                        <label for="modelo_equip">Modelo</label>
-                        <input type="text" name="modelo_equip">
+                        <label for="cModelo_equip">Modelo</label>
+                        <input type="text" id="modelo_equip" name="cModelo_equip">
                     </div>
                     <div class="div_obs">
-                        <label for="Observacoes">Descrição do Problema</label>
-                        <textarea name="Observacoes" cols="30" rows="10"></textarea>
+                        <label for="cDescricao">Descrição do Problema</label>
+                        <textarea name="cDescricao" id="descricao" cols="30" rows="10"></textarea>
                     </div>
                 </fieldset>
                 <!--/*======== Botão para Enviar ========*/-->
@@ -151,6 +151,7 @@
     <footer class="rodape">
         <p>Feito e desenvolvido por Generson</p>
     </footer>
+
 
 </body>
 
