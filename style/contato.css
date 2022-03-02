@@ -182,6 +182,9 @@ label::after {
 
 textarea {
     width: 100%;
+    font-family: var(--fonte-padrao);
+    padding: 4px 6px 6px 6px;
+    font-size: 1em;
 }
 
 

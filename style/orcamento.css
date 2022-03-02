@@ -145,7 +145,7 @@ form {
     margin-bottom: 2em;
 }
 
-fieldset {
+#campos_contato {
     border: 0px;
     background-color: #005ba183;
     backdrop-filter: blur(5px);
@@ -155,11 +155,15 @@ fieldset {
     width: 500px;
 }
 
-fieldset>.div_campos {
+#campos_contato>.div_campos {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 0.7em;
+}
+
+#descricao {
+    font-family: var(--fonte-padrao);
+    padding: 4px 6px 6px 6px;
+    font-size: 1em;
 }
 
 
@@ -181,7 +185,7 @@ fieldset>.div_campos {
 }
 
 #op_equip>label {
-    width: 100%;
+    width: 220px;
     padding-bottom: 1em;
     padding-top: 0.5em;
 }
@@ -189,7 +193,6 @@ fieldset>.div_campos {
 .op_equip {
     align-items: center;
     box-shadow: none;
-    width: 100%;
     display: flex;
     padding-bottom: 5px;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.767);
@@ -222,7 +225,7 @@ input:hover {
 }
 
 .div_obs>label {
-    width: 100%;
+    width: 200px;
     padding-bottom: 0.5em;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.767);
     font-weight: bold;
@@ -235,15 +238,12 @@ input:hover {
 
 /*======== Botão para Enviar ========*/
 
-.div_botao {
-    padding-top: 3em;
-}
-
 #botao_enviar {
     border: none;
     background-color: #0085EB;
-    width: 500px;
+    width: 100%;
     height: 45px;
+    margin-top: 2.3em;
     border-radius: 0.3em;
     cursor: pointer;
     color: #ffffff;
