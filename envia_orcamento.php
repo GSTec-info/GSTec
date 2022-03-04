@@ -91,7 +91,7 @@
     //Este sempre deverá existir para garantir a exibição correta dos caracteres
     $headers  = "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=utf-8\n";
-    $headers .= "Date: $data_envio";
+    $headers .= "Date: $data_envio\n";
     $headers .= "From: $nome <$email>";
     
 
