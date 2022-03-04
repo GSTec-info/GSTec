@@ -9,6 +9,7 @@
     <meta name="description" content="GSTec - Fale Conosco">
     <link rel="stylesheet" href="style/contato.css" type="text/css" media="screen">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script src="sweetalert.js"></script>
     <style>
         @media only screen and (max-width: 480px) {
             #secao2 {
@@ -176,7 +177,7 @@
         <div class="Menu">
             <a href="index.html"><img class="img_logo" src="logo.png" alt="Ícone"></a>
             <nav class="Navegacao">
-                <button class="botao_home" onclick="window.location.href='index.html';">Home</button>
+                <button class="botao_home" onclick="location.href='index.html';">Home</button>
             </nav>
         </div>
     </header>
@@ -204,7 +205,7 @@
                         <div id="div1_campos">
                             <div class="campo">
                                 <label for="cNome">Nome</label>
-                                <input type="text" id="nome" name="cNome" placeholder="Nome e Sobrenome">
+                                <input type="text" id="nome" name="cNome" placeholder="Nome e Sobrenome" required>
                             </div>
                             <div class="campo">
                                 <label for="cTelefone">Telefone</label>
@@ -212,16 +213,16 @@
                             </div>
                             <div class="campo">
                                 <label for="cEmail">E-mail</label>
-                                <input type="email" id="email" name="cEmail" placeholder="Nome@email.com">
+                                <input type="email" id="email" name="cEmail" placeholder="Nome@email.com" required>
                             </div>
                         </div>
 
                         <div id="div2_campos">
                             <label for="cMensagem">Mensagem</label>
-                            <textarea name="cMensagem" id="mensagem" cols="50" rows="6"></textarea>
+                            <textarea name="cMensagem" id="mensagem" cols="50" rows="6" required></textarea>
                         </div>
 
-                        <button type="submit" id="botão_enviar">Enviar</button>
+                        <button type="submit" id="botão_enviar" onclick="alerta()">Enviar</button>
 
                     </div>
                 </form>
@@ -235,6 +236,22 @@
         <p>Feito e desenvolvido por Generson</p>
     </footer>
 
+    <script>
+        function alerta() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var desc = document.getElementById('mensagem').value;
+
+            if ((nome != "") && (email != "") && (desc != "")) {
+                swal({
+                    title: "Por favor aguarde...",
+                    text: "O processo de envio pode demorar um pouco",
+                    icon: "info",
+                    buttons: false
+                });
+            }
+        }
+    </script>
 </body>
 
 </html>

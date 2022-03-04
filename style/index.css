@@ -94,13 +94,12 @@ header {
 
 .Primeira_Secao {
     padding-top: 5em;
-    margin: auto;
 }
 
 .div_primeira_secao {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .textos_Primeira_secao {
@@ -111,13 +110,12 @@ header {
 }
 
 .div_img_home {
-    display: block;
     height: 100%;
-    margin-left: 15em;
 }
 
 .img_secao_1 {
     height: 150px;
+    width: 100%;
 }
 
 .secao_1_titulo {

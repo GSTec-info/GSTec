@@ -19,6 +19,7 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="sweetalert.js"></script>
     <!-- Responsividade da Página -->
     <style>
         @media only screen and (max-width: 480px) {
@@ -145,7 +146,7 @@
                     </div>
                     <div class="div_campos">
                         <label for="cEndereco">Endereço</label>
-                        <input type="text" id="endereco" name="cEndereco" placeholder="Rua, Avenida ..." required>
+                        <input type="text" id="endereco" name="cEndereco" placeholder="Rua, Avenida ...">
                     </div>
                     <div class="div_campos">
                         <label for="cTelefone">Telefone</label>
@@ -171,18 +172,17 @@
                     </div>
                     <div class="div_campos">
                         <label for="cModelo_equip">Modelo</label>
-                        <input type="text" id="modelo_equip" name="cModelo_equip">
+                        <input type="text" id="modelo_equip" name="cModelo_equip" required>
                     </div>
                     <div class="div_obs">
                         <label for="cDescricao">Descrição do Problema</label>
-                        <textarea name="cDescricao" id="descricao" cols="30" rows="10"></textarea>
+                        <textarea name="cDescricao" id="descricao" cols="30" rows="10" required></textarea>
                     </div>
                 </div>
                 <!--/*======== Botão para Enviar ========*/-->
-                <button id="botao_enviar" type="submit">Enviar</button>
+                <button id="botao_enviar" type="submit" onclick="alerta()">Enviar</button>
 
             </form>
-
 
         </section>
     </main>
@@ -193,6 +193,23 @@
         <p>Feito e desenvolvido por Generson</p>
     </footer>
 
+    <script>
+        function alerta() {
+            var nome = document.getElementById('nome').value;
+            var telefone = document.getElementById('telefone').value;
+            var modeloEquip = document.getElementById('modelo_equip').value;
+            var desc = document.getElementById('descricao').value;
+
+            if ((nome != "") && (telefone != "") && (modeloEquip != "") && (desc != "")) {
+                swal({
+                    title: "Por favor aguarde...",
+                    text: "O processo de envio pode demorar um pouco",
+                    icon: "info",
+                    buttons: false
+                });
+            }
+        }
+    </script>
 
 </body>
 

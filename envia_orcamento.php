@@ -84,13 +84,16 @@
     
     //Emails para quem será enviado o formulário
     //$destino = "webmaster@gstec.app.br";
-    $destino = "generson.avelinosilva@gmail.com";
+    //$destino = "generson.avelinosilva@gmail.com";
+    $destino = "webmaster@gstec.app.br";
     $assunto = "Solicitação de Orçamento -- $nome";
 
     //Este sempre deverá existir para garantir a exibição correta dos caracteres
     $headers  = "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=utf-8\n";
+    $headers .= "Date: $data_envio";
     $headers .= "From: $nome <$email>";
+    
 
     //Enviar
     mail($destino, $assunto, $arquivo, $headers);    
