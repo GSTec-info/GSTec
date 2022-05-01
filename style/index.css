@@ -33,14 +33,14 @@ header {
     background-repeat: none;
     background-size: cover;
     box-shadow: var(--Sombra-padrao);
-    margin: auto;
 }
 
 .Menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 600px;
 }
 
 .img_logo {
@@ -127,6 +127,7 @@ header {
 
 .secao_1_subtitulo {
     font-size: 50px;
+    text-align: center;
     color: rgb(245, 237, 237);
     font-weight: 400;
     text-shadow: 1px 5px 5px rgba(7, 7, 7, 0.719);
@@ -158,13 +159,14 @@ main {
     background-attachment: fixed;
     background-position: center center;
     box-shadow: inset 0px 20px 30px rgba(0, 0, 0, 0.589);
+    height: 100vh;
     padding-bottom: 3em;
 }
 
 .principal_secao_2 {
     display: flex;
     justify-content: center;
-    padding: 20vh 2.1em 0px 2.1em;
+    padding: 5% 2.1em 0px 2.1em;
 }
 
 .principal_div_2 {
