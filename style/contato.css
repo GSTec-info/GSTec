@@ -56,21 +56,37 @@ header {
 .Navegacao {
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    gap: 2px;
 }
 
 .botao_home {
     color: #ffffff;
     font-size: 1.2em;
     font-weight: bold;
-    background-color: #0085EB;
+    background-color: #005a9e;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     width: 120px;
-    height: 30px;
-    border-radius: 10px;
+    height: 40px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .botao_home:hover {
+    background-color: #0906f0;
+}
+
+.botao_orcamento {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #005a9e;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 10px 10px 0px;
+    width: 120px;
+    height: 40px;
+}
+
+.botao_orcamento:hover {
     background-color: #0906f0;
 }
 
@@ -86,11 +102,10 @@ main {
 }
 
 #secao1>h1 {
-    background-color: #ffffff73;
+    background-color: #005ba183;
     text-align: center;
     font-size: 3em;
     color: #ffffff;
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.658);
     padding: 0.5em 0px 0.5em 0px;
 }
 
@@ -98,8 +113,7 @@ main {
     margin-left: 25em;
     margin-right: 25em;
     background-color: #ffffff;
-    height: 100vh;
-    padding-bottom: 100vh;
+    padding-bottom: 10em;
 }
 
 #div_main {
@@ -124,9 +138,17 @@ main {
     padding-bottom: 1.5em;
 }
 
+#div_SAC>p::before {
+    content: "📞 ";
+}
+
+span::before {
+    content: " ✔️ ";
+}
+
 #div_SAC_Links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
 }
@@ -135,6 +157,7 @@ main {
     margin-left: 1em;
     height: 25px;
     width: 100px;
+    border-radius: 10px;
 }
 
 
@@ -175,17 +198,28 @@ label::after {
 .campo>input {
     width: 100%;
     padding: 0.3em;
-}
-
-.campo>input:focus {
-    background-color: #84caff;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
 }
 
 textarea {
     width: 100%;
     font-family: var(--fonte-padrao);
-    padding: 4px 6px 6px 6px;
+    padding: 6px;
     font-size: 1em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+    background-color: #accfeb5e;
 }
 
 
@@ -193,11 +227,16 @@ textarea {
 
 #botão_enviar {
     width: 100%;
-    background-color: #0085EB;
+    background-color: #005a9e;
     font-size: 1.5em;
     margin-top: 1em;
     border-radius: 10px;
     padding: 0.5em 0px 0.5em 0px;
+    font-weight: bold;
+}
+
+#botão_enviar:hover {
+    background-color: #0906f0;
 }
 
 

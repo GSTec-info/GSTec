@@ -19,7 +19,6 @@
             #secao2 {
                 margin-left: 0em;
                 margin-right: 0em;
-                height: 100%;
             }
             #div_main {
                 display: block;
@@ -48,7 +47,6 @@
             #secao2 {
                 margin-left: 0em;
                 margin-right: 0em;
-                height: 100%;
             }
             form>div {
                 margin: 0px;
@@ -83,7 +81,6 @@
             #secao2 {
                 margin-left: 0em;
                 margin-right: 0em;
-                height: 100%;
             }
             #div_main {
                 width: 100%;
@@ -190,6 +187,7 @@
             <a href="index.html"><img class="img_logo" src="logo.png" alt="Ícone"></a>
             <nav class="Navegacao">
                 <button class="botao_home" onclick="location.href='index.html';">Home</button>
+                <button class="botao_orcamento" onclick="window.location.href='orcamento.html';">Solicitar Orçamento</button>
             </nav>
         </div>
     </header>
@@ -204,7 +202,7 @@
             <section id="div_main">
                 <div id="div_SAC">
                     <h1 class="titulo_SAC">SAC</h1>
-                    <p><strong>Telefones:</strong> <br><br>(16) 99620-8120 <br>(16) 98119-1353</p>
+                    <p><strong style="font-size: 1.2em;">Telefones:</strong><br><br><span>(16) 99620-8120</span><br><span style="">(16) 98119-1353</span></p>
                     <h1 class="titulo_SAC">Links</h1>
                     <div id="div_SAC_Links">
                         <a class="links" href="https://www.facebook.com/gstecinformaticajab" target="_blank"><img src="image/facebook-icon.svg" alt="facebook-icon"></a>
@@ -225,17 +223,14 @@
                             </div>
                             <div class="campo">
                                 <label for="email">E-mail</label>
-                                <input type="email" id="email" name="cEmail" placeholder="Nome@email.com" required>
+                                <input type="email" id="email" name="cEmail" placeholder="example@email.com" required>
+                            </div>
+                            <div id="div2_campos" class="campo">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea name="cMensagem" id="mensagem" cols="50" rows="6" required></textarea>
                             </div>
                         </div>
-
-                        <div id="div2_campos">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea name="cMensagem" id="mensagem" cols="50" rows="6" required></textarea>
-                        </div>
-
                         <button type="submit" id="botão_enviar" onclick="alerta()">Enviar</button>
-
                     </div>
                 </form>
             </section>

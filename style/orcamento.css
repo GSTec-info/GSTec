@@ -58,7 +58,6 @@ header {
 .Navegacao {
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
@@ -66,11 +65,12 @@ header {
     color: #ffffff;
     font-size: 1.2em;
     font-weight: bold;
-    background-color: #0085EB;
+    background-color: #005a9e;
     width: 120px;
     height: 30px;
     border-end-start-radius: 10px;
     border-top-left-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .botao_home:hover {
@@ -81,12 +81,13 @@ header {
     color: #ffffff;
     font-size: 1.2em;
     font-weight: bold;
-    background-color: #0085EB;
+    background-color: #005a9e;
     border-start-end-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 120px;
     height: 30px;
     margin-left: 2px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .botao_contato:hover {
@@ -104,7 +105,7 @@ main {
     box-shadow: inset var(--Sombra-padrao);
     background-attachment: fixed;
     background-position: center center;
-    padding-bottom: 100vh;
+    padding-bottom: 5em;
 }
 
 
@@ -113,9 +114,9 @@ main {
 #cabecalho_2 {
     padding-top: 2em;
     padding-bottom: 2em;
-    background-color: #ffffff79;
-    backdrop-filter: blur(5px);
+    background-color: #005ba183;
     margin: auto;
+    color: #ffffff;
 }
 
 #cabecalho_2>h1 {
@@ -137,20 +138,19 @@ main {
     display: flex;
     justify-content: center;
     padding-top: 5em;
-    height: 100vh;
 }
 
 
 /*======== Área de preenchimento dos dados ========*/
 
 form {
-    margin-bottom: 2em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.623);
+    border-radius: 0.6em;
 }
 
 #campos_contato {
     border: 0px;
-    background-color: #005ba183;
-    backdrop-filter: blur(5px);
+    background-color: #ffffffb4;
     border-radius: 0.6em;
     padding: 1.5em;
     box-shadow: var(--Sombra-padrao);
@@ -174,7 +174,6 @@ form {
 .div_campos>label {
     width: 150px;
     font-weight: bold;
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.767);
 }
 
 .div_campos>label::after {
@@ -211,7 +210,7 @@ textarea {
     border: none;
     border-radius: 0.3em;
     padding: 0.3em;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.363);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
 }
 
 input:focus,
@@ -242,7 +241,7 @@ input:hover {
 
 #botao_enviar {
     border: none;
-    background-color: #0085EB;
+    background-color: #005a9e;
     width: 100%;
     height: 45px;
     margin-top: 2.3em;

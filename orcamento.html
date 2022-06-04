@@ -37,7 +37,6 @@
             /*=== Preenchimento dos dados =====*/
             #secao_contato {
                 padding-top: 2em;
-                height: 100%;
             }
             #campos_contato {
                 width: 380px;
@@ -58,7 +57,6 @@
             }
             #secao_contato {
                 padding-top: 3.5em;
-                height: 100%;
             }
             #cabecalho_2>h1 {
                 font-size: 2.2em;
@@ -85,7 +83,6 @@
             }
             #secao_contato {
                 padding-top: 3.5em;
-                height: 100%;
             }
             #cabecalho_2>h1 {
                 font-size: 2.2em;
@@ -105,7 +102,6 @@
         @media only screen and (min-width: 1025px) {
             #secao_contato {
                 padding-top: 3.5em;
-                height: 100%;
             }
             #cabecalho_2>h1 {
                 font-size: 2.2em;
@@ -190,9 +186,10 @@
                         <label for="cDescricao">Descrição do Problema</label>
                         <textarea name="cDescricao" id="descricao" cols="30" rows="10" required></textarea>
                     </div>
+                    <button id="botao_enviar" type="submit" onclick="alerta()">Enviar Solicitação</button>
                 </div>
                 <!--/*======== Botão para Enviar ========*/-->
-                <button id="botao_enviar" type="submit" onclick="alerta()">Enviar</button>
+
 
             </form>
 
