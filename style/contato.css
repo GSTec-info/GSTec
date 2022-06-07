@@ -27,9 +27,9 @@ body {
 /*----------- Menu de Navegação ------------------------------*/
 
 header {
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     align-content: center;
-    padding-bottom: 2em;
+    padding-bottom: 0.5em;
     background: var(--Fundo1);
     background-repeat: none;
     background-size: cover;
@@ -95,9 +95,7 @@ header {
 
 main {
     background-image: url('../image/negocio.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center center;
 }
 
@@ -213,13 +211,6 @@ textarea {
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
-}
-
-input:focus,
-input:hover,
-textarea:focus,
-textarea:hover {
-    background-color: #accfeb5e;
 }
 
 

@@ -52,6 +52,7 @@
 <?php
 
     //Variáveis
+    $cod_os = rand(1, 99999);
     $nome = $_POST['cNome'];
     $endereco = $_POST['cEndereco'];
     $telefone = $_POST['cTelefone'];
@@ -63,19 +64,21 @@
     $data_envio = date('d/m/Y');
     $hora_envio = date('H:i:s', strtotime('-3 hours'));
 
-    //Compo E-mail
+    //Corpo do E-mail
     $arquivo = "
         <html>
         
             <h1>Solicitação de Orçamento</h1>
-            <p><strong>Nome:</strong> $nome</p>
-            <p><strong>Endereço:</strong> $endereco</p>
-            <p><strong>Telefone:</strong> $telefone</p>
-            <p><strong>E-mail:</strong> $email</p>
+            <br>
+            <p><strong>Cod. OS:</strong><br>$cod_os</p>
+            <p><strong>Nome:</strong><br>$nome</p>
+            <p><strong>Endereço:</strong><br>$endereco</p>
+            <p><strong>Telefone:</strong><br>$telefone</p>
+            <p><strong>E-mail:</strong><br>$email</p>
             <p><strong>Tipo de equipamento:</strong></p>
             <p>$checkNotebook $checkDesktop</p>
-            <p><strong>Modelo do Equipamento:</strong> $modelo</p>
-            <p><strong>Descrição do problema:</strong> $descricaoProblem</p>
+            <p><strong>Modelo do Equipamento:</strong><br>$modelo</p>
+            <p><strong>Descrição do problema:</strong><br>$descricaoProblem</p>
             <br>
             <p>Este e-mail foi enviado em <strong>$data_envio</strong> às <strong>$hora_envio</strong></p>
         
@@ -86,11 +89,11 @@
     //$destino = "webmaster@gstec.app.br";
     //$destino = "generson.avelinosilva@gmail.com";
     $destino = "webmaster@gstec.app.br";
-    $assunto = "Solicitação de Orçamento -- $nome";
+    $assunto = "Solicitação de Orçamento -- Cod.: $cod_os";
 
     //Este sempre deverá existir para garantir a exibição correta dos caracteres
     $headers  = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/html; charset=utf-8\n";
+    $headers .= "Content-type: text/html; charset=UTF-8\n";
     $headers .= "Date: $data_envio\n";
     $headers .= "From: $nome <$email>";
     

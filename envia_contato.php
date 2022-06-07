@@ -59,15 +59,16 @@
     $data_envio = date('d/m/Y');
     $hora_envio = date('H:i:s', strtotime('-3 hours'));
 
-    //Compo E-mail
+    //Corpo do E-mail
     $arquivo = "
         <html>
         
             <h1>Solicitação de Contato</h1>
-            <p><strong>Nome:</strong> $nome</p>
-            <p><strong>Telefone:</strong> $telefone</p>
-            <p><strong>E-mail:</strong> $email</p>
-            <p><strong>Mensagem:</strong> $mensagem</p>
+            <br>
+            <p><strong>Nome:</strong><br>$nome</p>
+            <p><strong>Telefone:</strong><br>$telefone</p>
+            <p><strong>E-mail:</strong><br>$email</p>
+            <p><strong>Mensagem:</strong><br>$mensagem</p>
             <br>
             <p>Este e-mail foi enviado em <strong>$data_envio</strong> às <strong>$hora_envio</strong></p>
         
@@ -82,7 +83,7 @@
 
     //Este sempre deverá existir para garantir a exibição correta dos caracteres
     $headers  = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/html; charset=utf-8\n";
+    $headers .= "Content-type: text/html; charset=UTF-8\n";
     $headers .= "Date: $data_envio\n";
     $headers .= "From: $nome <$email>";
     

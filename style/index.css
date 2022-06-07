@@ -26,11 +26,10 @@ body {
 /* ---------- Cabeçalho -------------------------------------------------------------- */
 
 header {
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     align-content: center;
     padding-bottom: 2em;
     background: var(--Fundo1);
-    background-repeat: none;
     background-size: cover;
     box-shadow: var(--Sombra-padrao);
 }
@@ -155,9 +154,7 @@ header {
 
 main {
     background-image: url('../image/negocio.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center center;
     box-shadow: inset 0px 20px 30px rgba(0, 0, 0, 0.589);
     height: 100vh;

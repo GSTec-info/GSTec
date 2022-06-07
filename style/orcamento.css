@@ -29,9 +29,9 @@ body {
 /*----------- Menu de Navegação ------------------------------*/
 
 header {
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     align-content: center;
-    padding-bottom: 2em;
+    padding-bottom: 0.5em;
     background: var(--Fundo1);
     background-repeat: none;
     background-size: cover;
@@ -101,9 +101,7 @@ main {
     align-items: center;
     background: var(--Fundo2);
     background-size: cover;
-    background-repeat: none;
     box-shadow: inset var(--Sombra-padrao);
-    background-attachment: fixed;
     background-position: center center;
     padding-bottom: 5em;
 }
@@ -137,20 +135,20 @@ main {
 #secao_contato {
     display: flex;
     justify-content: center;
-    padding-top: 5em;
+    padding-top: 1.5em;
 }
 
 
 /*======== Área de preenchimento dos dados ========*/
 
 form {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.623);
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
     border-radius: 0.6em;
 }
 
 #campos_contato {
     border: 0px;
-    background-color: #ffffffb4;
+    background-color: #ffffffd0;
     border-radius: 0.6em;
     padding: 1.5em;
     box-shadow: var(--Sombra-padrao);
@@ -211,11 +209,6 @@ textarea {
     border-radius: 0.3em;
     padding: 0.3em;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
-}
-
-input:focus,
-input:hover {
-    background-color: #accfeb5e;
 }
 
 .div_obs {
