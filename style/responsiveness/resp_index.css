@@ -1,0 +1,196 @@
+/* ++++++++++++++++++++++++++++ Responsividade ++++++++++++++++++++++++++++*/
+
+
+/*
+            For Mobile devices:               320px-480px
+            For Tablets or iPad:              480px - 768px
+            For Laptop or small-size screen:  768px -1024px
+            For Desktop or large-size screen: 1024px -1200px
+            For Extra-large size device:      1200px and more
+
+            @media (max-width: 480px) 
+            @media (min-width: 481px)and(max-width: 768px) 
+            @media (min-width: 769px)and(max-width: 1024px) 
+            @media (min-width: 1025px)and(max-width: 1200px)
+            @media (min-width: 1200px) 
+        */
+
+
+/* ------- Para dispositivos Mobile ---------*/
+
+@media only screen and (max-width: 380px) {
+    /* ------ Seção 1 -------------*/
+    .Menu {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    .Primeira_Secao {
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+    .div_primeira_secao {
+        display: block;
+    }
+    .div_img_home {
+        display: none;
+    }
+    .secao_1_titulo {
+        font-size: 50px;
+    }
+    .secao_1_subtitulo {
+        font-size: 25px;
+    }
+    .secao_1_botao {
+        align-content: center;
+        width: 300px;
+        height: 60px;
+        font-size: 1.5em;
+        padding: 13px;
+    }
+    /* ------- Seção 2 --------*/
+    main {
+        height: 100%;
+        padding-bottom: 1.5em;
+    }
+    .principal_secao_2 {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .secao_1_botao {
+        font-size: 1.4em;
+    }
+    .principal_div_2 {
+        width: 100vw;
+        padding: 15px;
+    }
+    .principal_div_2>h1 {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .topico {
+        margin-bottom: 20px;
+    }
+    .topico>p {
+        font-size: 0.6em;
+    }
+    .topico>img {
+        height: 19px;
+    }
+    /* ------- rodapé ---------*/
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+    /* ------ Seção 1 -------------*/
+    .Menu {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    .Primeira_Secao {
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+    .div_primeira_secao {
+        display: block;
+    }
+    .div_img_home {
+        display: none;
+    }
+    .secao_1_titulo {
+        font-size: 50px;
+    }
+    .secao_1_subtitulo {
+        font-size: 25px;
+    }
+    .secao_1_botao {
+        align-content: center;
+        width: 300px;
+        height: 60px;
+        font-size: 1.5em;
+        padding: 13px;
+    }
+    /* ------- Seção 2 --------*/
+    main {
+        height: 100%;
+        padding-bottom: 1.5em;
+    }
+    .principal_secao_2 {
+        padding: 10% 5% 0px 5%;
+    }
+    .principal_div_2>h1 {
+        font-size: 2em;
+        padding-bottom: 0.8em;
+    }
+    .topico {
+        font-size: 1.5em;
+    }
+    .topico>img {
+        height: 27px;
+    }
+    /* ------- rodapé ---------*/
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 10px;
+    }
+}
+
+
+/* ------- Para dispositivos Desktop ---------*/
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    /* ------ Seção 1 ---------*/
+    .Menu {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    .Primeira_Secao {
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+    .div_primeira_secao {
+        display: block;
+    }
+    .div_img_home {
+        display: none;
+    }
+    .secao_1_titulo {
+        font-size: 70px;
+    }
+    .secao_1_subtitulo {
+        font-size: 35px;
+    }
+    .secao_1_botao {
+        width: 360px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+    /* ------- Seção 2 --------*/
+    main {
+        height: 100%;
+        padding-bottom: 1.5em;
+    }
+    .principal_secao_2 {
+        padding: 10% 5% 0px 5%;
+    }
+    .principal_div_2 {
+        width: 600px;
+    }
+    .principal_div_2>h1 {
+        font-size: 2.5em;
+        padding-bottom: 0.8em;
+    }
+    /* ------- rodapé ---------*/
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 0.8em;
+    }
+}

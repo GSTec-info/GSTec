@@ -21,6 +21,7 @@ button {
 
 body {
     font-family: var(--fonte-padrao);
+    background-color: #005a9e;
 }
 
 
@@ -96,11 +97,14 @@ header {
 main {
     background-image: url('../image/negocio.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+}
+
+main>div {
+    background: linear-gradient( 0deg, #ffffff00, #004981);
 }
 
 #secao1>h1 {
-    background-color: #005ba183;
     text-align: center;
     font-size: 3em;
     color: #ffffff;
@@ -110,25 +114,30 @@ main {
 #secao2 {
     margin-left: 25em;
     margin-right: 25em;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     padding-bottom: 10em;
 }
 
 #div_main {
     display: flex;
     justify-content: center;
-    padding-top: 3em;
-    gap: 5em;
 }
 
 .titulo_SAC {
     color: #ffffff;
-    background: linear-gradient(to left, #ffffff, #005a9e);
+    background: linear-gradient(to left, #ffffff00, #005a9e);
     margin-bottom: 0.8em;
     padding-left: 0.5em;
     border-radius: 10px;
     font-size: 1.5em;
     width: 10em;
+}
+
+#div_SAC {
+    padding: 1em 1em 1em 1em;
+    border-radius: 15px;
+    background-color: #ffffff9f;
+    margin: 0em;
 }
 
 #div_SAC>p {
@@ -149,6 +158,7 @@ span::before {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    padding-right: 1.5em;
 }
 
 .links>img {
@@ -168,6 +178,7 @@ form>div {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.418);
     margin: 0em 1.5em 0em 1.5em;
     width: auto;
+    background-color: #ffffff9f;
 }
 
 #div_campos {
@@ -200,6 +211,7 @@ label::after {
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+    background-color: #ffffffbd;
 }
 
 textarea {
@@ -211,6 +223,7 @@ textarea {
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+    background-color: #ffffffbd;
 }
 
 

@@ -1,0 +1,92 @@
+@media only screen and (max-width: 480px) {
+    .Menu {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    #cabecalho_2>h1 {
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+    #cabecalho_2>h2 {
+        font-size: 0.9em;
+    }
+    /*=== Preenchimento dos dados =====*/
+    #secao_contato {
+        padding-top: 0.8em;
+    }
+    #campos_contato {
+        width: 380px;
+    }
+    /*=== Rodapé =====*/
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .Menu {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    #cabecalho_2>h1 {
+        font-size: 2.2em;
+    }
+    #cabecalho_2>h2 {
+        font-size: 1em;
+    }
+    #campos_contato {
+        width: 400px;
+    }
+    #secao_contato {
+        padding-top: 0.8em;
+    }
+    /* ------- rodapé ---------*/
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .Menu {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    #cabecalho_2>h1 {
+        font-size: 2.2em;
+    }
+    #cabecalho_2>h2 {
+        font-size: 1em;
+    }
+    #secao_contato {
+        padding-top: 0.8em;
+    }
+    /* ------- rodapé ---------*/
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #cabecalho_2>h1 {
+        font-size: 2.2em;
+    }
+    #cabecalho_2>h2 {
+        font-size: 1em;
+    }
+    /* ------- rodapé ---------*/
+    .rodape {
+        padding: 5px;
+    }
+    .rodape>p {
+        font-size: 0.8em;
+    }
+}
