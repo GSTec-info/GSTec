@@ -8,7 +8,6 @@
     <title>GSTec - Orçamento</title>
     <meta name="description" content="GSTec - Orçamento">
     <link rel="stylesheet" href="style/orcamento.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="./style/responsiveness/resp_orcamento.css" type="text/css" media="screen">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -20,7 +19,56 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="sweetalert.js"></script>
+    <!-- Responsividade da Página -->
+    <style>
+        @media only screen and (max-width: 480px) {
+            #cabecalho_2>h1 {
+                font-size: 2em;
+                padding-bottom: 0.5em;
+            }
+            #cabecalho_2>h2 {
+                font-size: 0.9em;
+            }
+            /*=== Preenchimento dos dados =====*/
+            #secao_contato {
+                padding-top: 2em;
+                height: 100%;
+            }
+            fieldset {
+                width: 350px;
+            }
+            #botao_enviar {
+                width: 350px;
+            }
+            /*=== Rodapé =====*/
+            .rodape {
+                padding: 5px;
+            }
+            .rodape>p {
+                font-size: 10px;
+            }
+        }
+        
+        @media only screen and (min-width: 481px) and (max-width: 1400px) {
+            #secao_contato {
+                padding-top: 3.5em;
+                height: 100%;
+            }
+            #cabecalho_2>h1 {
+                font-size: 2.2em;
+            }
+            #cabecalho_2>h2 {
+                font-size: 1em;
+            }
+            /* ------- rodapé ---------*/
+            .rodape {
+                padding: 5px;
+            }
+            .rodape>p {
+                font-size: 0.8em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -47,9 +95,9 @@
         </section>
         <!--/*======== Seção do formulário ========-->
         <section id="secao_contato">
-            <form action="envia_orcamento.php" method="post">
+            <form>
                 <!--/*======== Área de preenchimento dos dados ========*/-->
-                <div id="campos_contato">
+                <fieldset id="campos_contato">
                     <!--/*======== labels e campos ========*/-->
                     <div class="div_campos">
                         <label for="cNome">Nome</label>
@@ -57,7 +105,7 @@
                     </div>
                     <div class="div_campos">
                         <label for="cEndereco">Endereço</label>
-                        <input type="text" id="endereco" name="cEndereco" placeholder="Rua, Avenida ...">
+                        <input type="text" id="endereco" name="cEndereco" placeholder="Rua, Avenida ..." required>
                     </div>
                     <div class="div_campos">
                         <label for="cTelefone">Telefone</label>
@@ -69,32 +117,31 @@
                     </div>
                     <div id="op_equip" class="div_campos">
                         <label>Tipo(s) de Equipamento(s)</label>
-
                         <ol type="none">
                             <li class="op_equip">
-                                <input value="Notebook" id="check_notebook" type="checkbox" name="ckNotebook">
-                                <label for="check_notebook">Notebook</label>
+                                <input value="Notebook" id="check_notebook" type="checkbox" name="notebook">
+                                <label for="notebook">Notebook</label>
                             </li>
                             <li class="op_equip">
-                                <input value="Desktop" id="check_desktop" type="checkbox" name="ckDesktop" checked>
-                                <label for="check_desktop">Desktop (PC)</label>
+                                <input value="Desktop" id="check_desktop" type="checkbox" name="desktop" checked>
+                                <label for="desktop">Desktop (PC)</label>
                         </ol>
-
                     </div>
                     <div class="div_campos">
                         <label for="cModelo_equip">Modelo</label>
-                        <input type="text" id="modelo_equip" name="cModelo_equip" required>
+                        <input type="text" id="modelo_equip" name="cModelo_equip">
                     </div>
                     <div class="div_obs">
                         <label for="cDescricao">Descrição do Problema</label>
-                        <textarea name="cDescricao" id="descricao" cols="30" rows="10" required></textarea>
+                        <textarea name="cDescricao" id="descricao" cols="30" rows="10"></textarea>
                     </div>
-                    <button id="botao_enviar" type="submit" onclick="alerta()">Enviar Solicitação</button>
-                </div>
+                </fieldset>
                 <!--/*======== Botão para Enviar ========*/-->
-
-
+                <div class="div_botao">
+                    <button id="botao_enviar" type="submit">Enviar</button>
+                </div>
             </form>
+
 
         </section>
     </main>
@@ -105,23 +152,6 @@
         <p>Feito e desenvolvido por Generson</p>
     </footer>
 
-    <script>
-        function alerta() {
-            var nome = document.getElementById('nome').value;
-            var telefone = document.getElementById('telefone').value;
-            var modeloEquip = document.getElementById('modelo_equip').value;
-            var desc = document.getElementById('descricao').value;
-
-            if ((nome != "") && (telefone != "") && (modeloEquip != "") && (desc != "")) {
-                swal({
-                    title: "Por favor aguarde...",
-                    text: "O processo de envio pode demorar um pouco",
-                    icon: "info",
-                    buttons: false
-                });
-            }
-        }
-    </script>
 
 </body>
 

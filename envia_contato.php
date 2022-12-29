@@ -59,7 +59,7 @@
     $data_envio = date('d/m/Y');
     $hora_envio = date('H:i:s', strtotime('-3 hours'));
 
-    //Corpo do E-mail
+    //Compo E-mail
     $arquivo = "
         <html>
         
