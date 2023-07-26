@@ -1,3 +1,3 @@
 # GSTec Informática
 
-<p>Projeto Site pessoal</p>
+<p>Projeto site pessoal</p>
